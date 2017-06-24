@@ -1,0 +1,177 @@
+{
+	"testData": {
+		"launcher": {
+			"address": "0xe9447de2ebdba1186bc8cadf01b24959706726e4",
+			"funds": 99999.9744696
+		},
+		"ether": {
+			"address": "0xfc9592613f9e497e5f94b49d30f7499512413979",
+			"funds": 100000
+		},
+		"tokens": {
+			"address": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+			"funds": 100000
+		},
+		"participant1": {
+			"address": "0xd799cbf3857b0b6623ef516ebd993265512ad4cf",
+			"funds": 100000
+		},
+		"participant2": {
+			"address": "0xba9da4daf3d0fa6bfff8a66a5b824b049475adc0",
+			"funds": 100000
+		}
+	},
+	"contractAddress": "0x2e7a44f61be54d31d92364921ba69dd53eef42cd",
+	"contractData": {
+		"start": {
+			"hostAccount": "0xe9447de2ebdba1186bc8cadf01b24959706726e4",
+			"ethFundsDepositAccount": "0xfc9592613f9e497e5f94b49d30f7499512413979",
+			"gunsFundsDepositAccount": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+			"currentBlock": 5,
+			"fundingStartBlock": "3",
+			"fundingEndBlock": "11",
+			"totalSupplySoFar": 35000000,
+			"gunsFundsTokenBalanceSoFar": 35000000,
+			"contractETHBalance": 0,
+			"participant1Tokens": 0,
+			"participant2Tokens": 0
+		},
+		"buyTokensTest": {
+			"currentBlock": 6,
+			"contractETHBalance": 10,
+			"participant1AfterPaying": {
+				"address": "0xd799cbf3857b0b6623ef516ebd993265512ad4cf",
+				"funds": 99989.99903032
+			},
+			"participant1Tokens": 10000,
+			"participant2Tokens": 0
+		},
+		"fractionalTokenBuyTest": {
+			"currentBlock": 7,
+			"contractETHBalance": 11.35784,
+			"participant1AfterPaying": {
+				"address": "0xd799cbf3857b0b6623ef516ebd993265512ad4cf",
+				"funds": 99988.64052064
+			},
+			"participant1Tokens": 11357.84,
+			"participant2Tokens": 0,
+			"totalSupplyNow": 35011357.84
+		},
+		"transferTokensTest": {
+			"currentBlock": 8,
+			"contractETHBalance": 11.35784,
+			"participant1Balance": 99988.63949426,
+			"participant2Balance": 100000,
+			"participant1Tokens": 11257.84,
+			"participant2Tokens": 100
+		},
+		"buyMoreTokensTest": {
+			"currentBlock": 9,
+			"contractETHBalance": 5011.35784,
+			"participant1Balance": 99988.63949426,
+			"participant2Balance": 94999.99933032,
+			"participant1Tokens": 11257.84,
+			"participant2Tokens": 5000100
+		},
+		"buyEvenMoreTokensTest": {
+			"currentBlock": 10,
+			"contractETHBalance": 55011.35784,
+			"participant1Balance": 99988.63949426,
+			"participant2Balance": 44999.99866064,
+			"participant1Tokens": 11257.84,
+			"participant2Tokens": 55000100,
+			"totalSupplyNow": 90011357.84
+		},
+		"exceedTokenQuantityTest": {
+			"currentBlock": 11,
+			"attemptedNumTokensToBuy": 10000000,
+			"wouldHaveMadeSupply": 100011357.84
+		},
+		"finalizeAuthBlockNotMetTest": {
+			"currentBlock": 12,
+			"isContractFinalized": false
+		},
+		"finalizeNonAuthTest": {
+			"currentBlock": 12,
+			"isContractFinalized": false
+		},
+		"preFinalizeData": {
+			"currentBlock": 12,
+			"totalSupplySoFar": 90011357.84,
+			"ethFundsDepositAccount": "0xfc9592613f9e497e5f94b49d30f7499512413979",
+			"gunsFundsDepositAccount": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+			"ethFundsETHBalanceSoFar": 100000,
+			"gunsFundsETHBalanceSoFar": 99999.90575224,
+			"contractETHBalance": 55011.35784,
+			"participant1Balance": 99988.63769426,
+			"participant2Balance": 44999.99866064,
+			"participant1Tokens": 11257.84,
+			"participant2Tokens": 55000100,
+			"isContractFinalized": false
+		},
+		"finalizeTest": {
+			"currentBlock": 13,
+			"totalSupplyFinal": 100000000,
+			"ethFundsDepositAccount": "0xfc9592613f9e497e5f94b49d30f7499512413979",
+			"gunsFundsDepositAccount": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+			"ethFundsETHBalanceFinal": 155011.35691996,
+			"gunsFundsETHBalanceFinal": 99999.90575224,
+			"gunsFundsTokenBalanceFinal": 44988642.16,
+			"participant1Tokens": 11257.84,
+			"participant2Tokens": 55000100,
+			"contractETHBalance": 0,
+			"isContractFinalized": true
+		},
+		"mistakenTokensTest": {
+			"preTransfer": {
+				"currentBlock": 13,
+				"totalSupply": 100000000,
+				"gunsAccount": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+				"gunsAccountTokens": 44988642.16,
+				"participant1Tokens": 11257.84
+			},
+			"postTransfer": {
+				"currentBlock": 14,
+				"totalSupply": 100000000,
+				"gunsAccount": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+				"gunsAccountTokens": 44988642.16,
+				"participant1Tokens": 11157.84,
+				"contractTokens": 100
+			},
+			"postCleanUp": {
+				"currentBlock": 15,
+				"totalSupply": 100000000,
+				"gunsAccount": "0x8e46d427c64e747b1a3a36e74ea8701b7836acf6",
+				"gunsAccountTokens": 44988742.16,
+				"participant1Tokens": 11157.84,
+				"participant2Tokens": 55000100,
+				"sumPeopleAndGunsAcct": 100000000,
+				"contractTokens": 0
+			}
+		},
+		"payContractTest": {
+			"prePay": {
+				"participant1Balance": 99988.63666788,
+				"contractETHBalance": 0
+			},
+			"postPay": {
+				"participant1Balance": 99856.63623242,
+				"contractETHBalance": 132
+			}
+		},
+		"finalizeAgain": {
+			"preRun": {
+				"ethFundsDepositAccount": "0xfc9592613f9e497e5f94b49d30f7499512413979",
+				"ethAccountBalance": 155011.35652362,
+				"contractETHBalance": 132,
+				"totalSupply": 100000000
+			},
+			"postRun": {
+				"ethFundsDepositAccount": "0xfc9592613f9e497e5f94b49d30f7499512413979",
+				"ethAccountBalance": 155143.35584266,
+				"contractETHBalance": 0,
+				"totalSupply": 100000000
+			}
+		}
+	}
+}
